@@ -1649,5 +1649,30 @@ div.section-home {
 
     }
 
+        .porto-nav ul li a {
+        font-size: 25px;
+    }
+
+    .porto-nav {
+        width: 430px;
+    }
+
+    .porto-nav ul {
+        gap: 45px;
+    }
+
+    .card-gd1 .card-porto:last-of-type {
+        margin-left: -80px;
+    }
+
+    .card-gd2 .card-porto:last-of-type {
+        margin-left: -80px;
+    }
+
+    .card-gd1,
+    .card-gd2 {
+        margin-left: -100px;
+    }
+
 
 }
