@@ -1399,7 +1399,7 @@ div.section-home {
 }
 
 /*ANDROID*/
-@media (max-width : 480px) {
+@media (max-width : 512px) {
     
     div.section-home {
         height: auto;
@@ -1428,6 +1428,12 @@ div.section-home {
     .deskripsi {
         margin-top: 90px;
         font-size: 14px;
+    }
+
+    .deskripsi-lagi{
+        width: 380px;
+        text-align: justify;
+        text-justify: inter-word;
     }
 
     .button-home {
@@ -1653,12 +1659,12 @@ div.section-home {
 
     }
 
-        .porto-nav ul li a {
+    .porto-nav ul li a {
         font-size: 25px;
     }
 
     .porto-nav {
-        width: 430px;
+        width: 400px;
     }
 
     .porto-nav ul {
@@ -1678,5 +1684,51 @@ div.section-home {
         margin-left: -100px;
     }
 
+    .photo-1 img{
+        width: 300px;
+    }
+    
+    .photo-2 img{
+        width: 300px;
+    }
+    
+    .photo-3 img{
+        width: 300px;
+    }
+    
+    .photo-4 img{
+        width: 300px;
+    }
 
+    .photo-info h3 {
+        font-size: 14px;
+    }
+    
+    .photo-info p {
+        font-size: 14px;
+    } 
+    
+    .more-photo-info p {
+        font-size: 14px;
+    }
+    
+    .more-photo-info a {
+        font-size: 14px;
+    }
+
+    .padding-video iframe {
+        width: 400px;
+    }
+
+    .padding-video h3 {
+        font-size: 14px;
+    }
+
+    .more-photo-info a i {
+        margin-right: 3px;
+    }
+    
+    .padding-video p {
+        font-size: 12px;
+    }
 }
