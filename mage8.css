@@ -1,0 +1,248 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+    max-width: 1920px; 
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.section-mage8 {
+    background: no-repeat url("https://res.cloudinary.com/dbnlmrsx0/image/upload/v1729869418/Background_Portfolio_nrlni4.png");
+    background-size: auto;
+    background-position:top;
+    height: auto;
+}
+
+.back {
+    position: fixed;
+    top: 2%;
+    left: 2%;
+}
+
+
+.back a {
+    text-decoration: none;
+    color: white;
+}
+
+.ph-arrow-left {
+    font-size: 25px;
+}
+
+.ph-arrow-left:hover {
+    font-size: 27px;
+    color: #00ffe5;
+}
+
+
+
+.layout {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    margin-top: 7px;
+    margin-right: 20px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    align-items: center;
+}
+
+.title h3 {
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+}
+
+.title p {
+    margin-top: 0px;
+    color: #00ffe5;
+    font-size: 18px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 500;
+    position: relative;
+}
+
+.deskripsi {
+    position: relative;
+}
+
+.deskripsi p {
+    margin-top: 40px;
+    color: white;
+    font-size: 18px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    position: relative;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.link-ig {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.ph-instagram-logo {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.link-ig a {
+    color: white;
+    font-size: 16px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 300;
+    position: relative;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+}
+
+.content {
+    margin-top: 40px;
+}
+
+.instagram-feed p,
+.story p,
+.poster p {
+    margin-top: 0px;
+    color: #00ffe5;
+    font-size: 18px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 500;
+    position: relative; 
+}
+
+.instagram-feed p:after,
+.story p:after,
+.poster p::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 0.2px;
+    left: 0;
+    bottom: 0px;
+    border-radius:10px 10px 10px 10px;
+}
+
+.story,
+.poster
+{
+    margin-top: 80px;
+}
+
+.instagram-feed p::after {
+    width: 150px;
+}
+
+.story p::after {
+    width: 147px;
+}
+
+.poster p::after {
+    width: 55px;
+}
+
+
+.instagram-feed img {
+    margin-top: 15px;
+    width: 700px;
+}
+
+.list-image-story  {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    width: 300px;
+}
+
+.list-image-story img{
+    width: 300px;
+    border: 0.2px solid rgb(59, 59, 59);
+}
+
+.list-image-poster img{
+    margin-top: 15px;
+    width: 350px;
+    border: 0.2px solid rgb(59, 59, 59);
+}
+
+
+
+@media (max-width: 1300px) {
+    
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1180px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width : 768px) {
+    .ph-arrow-left {
+        font-size: 18px;
+    }
+
+    .ph-arrow-left:hover {
+        font-size: 20px;
+    }
+    
+    .deskripsi p {
+        font-size: 16px;
+    }
+
+    .list-image-story {
+        flex-direction: column;
+    }
+
+    .list-image-story img{
+        width: 270px;
+    }
+
+    .list-image-poster img{
+        width: 300px;
+    }
+
+
+    
+}
+
+@media (max-width: 640px) {
+
+}

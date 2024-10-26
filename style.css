@@ -1,0 +1,1649 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+    max-width: 1920px; 
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+/*NAVBAR*/
+.menu-nav {
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    position: fixed; /*Ini biar nyantol terus navbar nya*/
+    background-color :rgba(0, 0, 0, 0.8);
+    top: 0;
+    max-width: 1920px;
+}
+
+.menu-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25rem;
+}
+
+.menu-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "Dongle", sans-serif;
+    padding: 0rem 0.7rem;
+    position: relative;
+    transition: 300ms;
+}
+
+.menu-nav ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: #00ffe5;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 3px;
+    border-radius:10px 10px 10px 10px;
+    transition: 300ms;
+}
+
+.menu-nav ul li a:hover {
+    color: #00ffe5;
+}
+
+.menu-nav ul li a:hover:after {
+    width: 100%;
+}
+
+.menu-nav ul li a.active {
+    color: #00ffe5;
+}
+
+.menu-nav ul li a.active:after {
+    width: 100%;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/*HOME*/
+div.section-home {
+    background: no-repeat url("https://res.cloudinary.com/dbnlmrsx0/image/upload/v1729550433/Background_Home_x3f49p.png");
+    background-size: auto;
+    background-position:bottom;
+    height: 970px;
+}
+
+.text-home {
+    overflow: hidden;
+    padding-top: 10%;
+    padding-left: 10%;
+
+}
+
+
+.nama {
+    margin-top: 10px;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+}
+
+.nama:after {
+    content: "";
+    position: absolute;
+    background-color: #00ffe5;
+    height: 3px;
+    width: 335px;
+    left: 0;
+    bottom: 5px;
+    border-radius:10px 10px 10px 10px;
+}
+
+.deskripsi {
+    margin-top: 150px;
+    color: white;
+    font-size: 20px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+
+.deskripsi em{
+    font-style: normal;
+    color: #00ffe5;
+}
+
+.deskripsi-lagi{
+    width: 500px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.button-home {
+    margin-top: 130px;
+    display:flex;
+    gap: 30px;
+}
+
+.button-resume, .button-porto {
+    color: white;
+    background-color: black;
+    width: 150px;
+    border: 2.5px solid;
+    border-color: #00ffe5;
+    border-radius: 60px; 
+    font-family: "Dongle", sans-serif;
+    font-size: 35px;
+}
+
+.button-resume:hover,
+.button-porto:hover {
+    background-color: #00ffe5;
+    color: black;
+}
+
+
+.sosmed-home {
+    margin-top: 140px;
+    display: flex;
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    align-items: center;
+    color: white;
+}
+
+.sosmed-home a {
+    text-decoration: none;
+    color: white;
+}
+
+.ph-instagram-logo,
+.ph-envelope,
+.ph-linkedin-logo {
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    padding-right: 5px;
+
+}
+
+.ig-home,
+.email-home,
+.linkedin-home {
+    align-items: center;
+    display: flex;
+    padding-right: 15px;
+
+}
+
+
+/*RESUME*/
+.section-resume {
+    background: no-repeat url("https://res.cloudinary.com/dbnlmrsx0/image/upload/v1729772719/Background_Resume_dzzmub.png");
+    background-size: auto;
+    background-position:top;
+    height: 1080px;
+}
+
+.padding-resume {
+    overflow: hidden;
+    padding-top: 10%;
+    padding-left: 5%;
+}
+
+.layout-resume {
+    display: flex;
+}
+
+/*SOFTWARE SKILLS*/
+.title-software,
+.title-languages,
+.title-personal,
+.title-organization,
+.title-education,
+.title-ido,
+.title-ability,
+.title-hobbies {
+    color: #00ffe5;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+}
+
+.title-software:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 250px;
+    left: 0;
+    bottom: -1px;
+    border-radius:10px 10px 10px 10px;
+}
+
+
+/*format segment*/
+.segment {
+    height: 100%;
+    flex: 1;
+    border-radius: 20px;
+    position: relative;
+}
+
+.segment.filled {
+    background-color: #00ffe5;
+}
+
+.segment.empty {
+    background-color: white;
+}
+
+.figma {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.illustrator,
+.photoshop,
+.corel,
+.premiere {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.figma img,
+.illustrator img,
+.photoshop img,
+.corel img,
+.premiere img {
+    width:  42px;
+    margin-right: 15px;
+}
+
+.figma p,
+.illustrator p,
+.photoshop p,
+.corel p,
+.premiere p {
+    color: white;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+}
+
+.rank-figma,
+.rank-illustrator,
+.rank-photoshop,
+.rank-corel,
+.rank-premiere,
+.rank-indo,
+.rank-english {
+    margin-top: 3px;
+    width: 100%;
+    max-width: 200px;
+    height: 3px;
+    display: flex;
+    gap: 8px;
+    position: relative;
+}
+
+.filled-figma::after,
+.filled-illustrator::after,
+.filled-photoshop::after,
+.filled-corel::after,
+.filled-premiere::after,
+.filled-indo::after,
+.filled-english::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -5px;
+    right: -5px;
+    bottom: -4px;
+    border: 2px solid #00ffe5;
+    border-radius: 20px;
+}
+
+/*rank margin*/
+.rank-figma {
+    margin-left: 81px;
+}
+.rank-illustrator {
+    margin-left: 46px;
+}
+.rank-photoshop {
+    margin-left: 40px;
+}
+.rank-corel {
+    margin-left: 37px;
+}
+.rank-premiere {
+    margin-left: 20px;
+}
+
+/*figma*/
+.filled-figma {
+    display: flex;
+    gap: 4px;
+    width: 80%; 
+    position: relative;
+}
+
+.empty-figma {
+    display: flex;
+    gap: 4px;
+    width: 20%; 
+}
+
+/*illustrator*/
+.filled-illustrator {
+    display: flex;
+    gap: 4px;
+    width: 70%; 
+    position: relative;
+}
+
+.empty-illustrator {
+    display: flex;
+    gap: 4px;
+    width: 30%; 
+}
+
+/*photoshop*/
+.filled-photoshop {
+    display: flex;
+    gap: 4px;
+    width: 70%; 
+    position: relative;
+}
+
+.empty-photoshop {
+    display: flex;
+    gap: 4px;
+    width: 30%; 
+}
+
+/*corel*/
+.filled-corel {
+    display: flex;
+    gap: 4px;
+    width: 80%; 
+    position: relative;
+}
+
+.empty-corel {
+    display: flex;
+    gap: 4px;
+    width: 20%; 
+}
+
+/*premiere*/
+.filled-premiere {
+    display: flex;
+    gap: 4px;
+    width: 60%; 
+    position: relative;
+}
+
+.empty-premiere {
+    display: flex;
+    gap: 4px;
+    width: 40%; 
+}
+
+/*LANGUAGES*/
+.title-languages {
+    margin-top: 80px;
+}
+
+.title-languages:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 160px;
+    left: 0;
+    bottom: -1px;
+    border-radius:10px 10px 10px 10px;
+}
+
+.indo {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+.english {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.indo p,
+.english p {
+    color: white;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+}
+
+/*indo*/
+.filled-indo {
+    display: flex;
+    gap: 4px;
+    width: 100%; 
+    position: relative;
+}
+
+/*english*/
+.filled-english {
+    display: flex;
+    gap: 4px;
+    width: 70%; 
+    position: relative;
+}
+
+.empty-english {
+    display: flex;
+    gap: 4px;
+    width: 30%; 
+}
+
+.rank-indo {
+    margin-left: 20px;
+}
+
+.rank-english {
+    margin-left: 129px;
+}
+
+
+/*PERSONAL & BASICS*/
+.title-personal {
+    margin-top: 72px;
+}
+
+.title-personal::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 1.5px;
+    width: 275px;
+    bottom: 0px;
+    border-radius:10px 10px 10px 10px;
+}
+
+.list-basic {
+    margin-top: 30px;
+    display: flex;
+}
+
+.list-personal1,
+.list-personal2 {
+    color: white;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+}
+
+.list-personal1 {
+    margin-left: 22px;
+    width: 200px;
+}
+
+.list-personal2 {
+    margin-left: 10px;
+    width: 350px;
+}
+
+.list-personal1 li:last-of-type,
+.list-personal2 li:last-of-type{
+    margin-top: 10px;
+}
+
+
+/*ORGANIZATION*/
+.title-organization:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 390px;
+    left: 0;
+    bottom: -1px;
+    border-radius:10px 10px 10px 10px;
+}
+
+.timeline {
+    position: relative;
+    margin-top: 30px;
+}
+
+/* Garis vertikal */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #00ffe5;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 65px; /*atur jarak tahun*/
+    position: relative;
+}
+
+/* Dot tahun */
+.year {
+    width: 85px;
+    position: relative;
+}
+
+.year-dot {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lexend Deca',sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    position: absolute;
+    z-index: 2;
+}
+
+.content {
+    flex: 1;
+}
+
+.content h3 {
+    color: white;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.content p {
+    color: white;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/*EDUCATION*/
+.title-education:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 160px;
+    left: 0;
+    bottom: -1px;
+    border-radius:10px 10px 10px 10px;
+}
+
+.education-item1,
+.education-item2 {
+    display: flex;
+}
+
+.education-item1 {
+    margin-top: 30px;
+}
+
+.education-item2 {
+    margin-top: 20px;
+}
+
+.edu-year {
+    color: #00ffe5;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+.edu {
+    color: white;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 18px;
+    font-weight: 400; 
+}
+
+/*WHAT CAN I DO*/
+.title-ido:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 225px;
+    left: 0;
+    bottom: -1px;
+    border-radius:10px 10px 10px 10px;
+}
+
+.list-ido {
+    color: white;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 18px;
+    font-weight: 400; 
+    margin-top: 30px;
+}
+.list-ido p {
+    margin-bottom: 5px;
+}
+
+/*DESIGN ABILITY*/
+.title-ability {
+    margin-top: 180px;
+}
+
+.title-ability:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 225px;
+    left: 0;
+    bottom: -1px;
+    border-radius:10px 10px 10px 10px;
+}
+
+.list-ability {
+    color: white;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 18px;
+    font-weight: 400; 
+    margin-top: 30px;
+}
+.list-ability p {
+    margin-bottom: 5px;
+}
+
+/*HOBBIES & INTERESTS*/
+.title-hobbies {
+    margin-top: 180px;
+}
+
+
+.title-hobbies:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 305px;
+    left: 0;
+    bottom: -1px;
+    border-radius:10px 10px 10px 10px;
+}
+
+.list-hobbies {
+    color: white;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 18px;
+    font-weight: 400; 
+    margin-top: 30px;
+    display: flex;
+}
+
+.ph-camera,
+.ph-music-notes-simple,
+.ph-person-simple-hike,
+.ph-volleyball {
+    font-size: 40px;
+    align-items: center;
+    display: flex;
+    padding-right: 15px;
+
+}
+
+.hobbies1 {
+    margin-right: 20px;
+}
+
+.hobbies1 p,
+.hobbies2 p {
+    align-items: center;
+    display: flex;
+    padding-right: 20px;
+}
+.hobbies1 p:last-of-type,
+.hobbies2 p:last-of-type {
+    padding-top: 15px;
+}
+
+.resume1,
+.resume2 {
+    margin-right: 40px;
+}
+
+.layout-resume-1700 {
+    display: flex;
+}
+
+
+/*PORTOFOLIO*/
+
+.section-portfolio {
+    background: no-repeat url("https://res.cloudinary.com/dbnlmrsx0/image/upload/v1729869418/Background_Portfolio_nrlni4.png");
+    background-size: auto;
+    background-position:top;
+    height: auto;
+}
+
+.padding-porto {
+    padding-top: 10%;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.porto-nav {
+    width: 600px;
+    position: relative;
+    z-index: 999;
+}
+
+.porto-nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #00ffe5;
+}
+
+.porto-nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 95px;
+}
+
+.porto-nav ul li a{
+    font-family: "Dongle", sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: 300ms;
+}
+
+.porto-nav ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: #00ffe5;
+    height: 4px;
+    width: 0%;
+    left: 0;
+    border-radius:0px 0px 10px 10px;
+    transition: 300ms;
+}
+
+.porto-nav ul li a:hover {
+    color: #00ffe5;
+}
+
+.porto-nav ul li a:hover:after {
+    width: 100%;
+}
+
+.porto-nav ul li a.active {
+    color: #00ffe5;
+}
+
+.porto-nav ul li a.active:after {
+    content: "";
+    position: absolute;
+    background-color: #00ffe5;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    border-radius:0px 0px 10px 10px;
+    transition: 300ms;
+}
+
+.section-graphic-design {
+    height: 970px;
+}
+
+
+.card-gd1 {
+    display: flex;
+    gap: 100px;
+    margin-top: 80px;
+    margin-left: -50px;
+}
+
+.card-gd2 {
+    display: flex;
+    gap: 100px;
+    margin-top: 80px;
+    margin-left: -50px;
+}
+
+.card-porto {
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+
+}
+
+.card-porto a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 3;
+}
+
+.card-porto img {
+    width: 65%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.card-porto a h3 {
+    color: #00ffe5;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 16px;
+    font-weight: 400; 
+    margin-top: 10px;
+}
+
+.card-porto a p {
+    color: white;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 14px;
+    font-weight: 300; 
+    margin-top: 5px;
+}
+
+.card-porto::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(180deg, 
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(0, 0, 0, 0.5) 100%
+    );
+    z-index: 2;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.card-porto:hover::after {
+    opacity: 0;
+}
+
+.card-porto a h3:hover {
+    font-weight: 600;
+}
+
+.ph-arrow-right {
+    align-items: center;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.show-more-card {
+    display: flex;
+    align-items: center;
+}
+
+.show-more-card:hover {
+    font-weight: 500;
+}
+
+/*PHOTOGRAPHY*/
+.section-photography {
+    height: auto;
+    margin-left: 100px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 0.9fr);
+    margin-top: 80px;
+}
+
+.photo-1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.photo-2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.photo-3 {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+    padding-top: 50px;
+}
+
+.photo-4 {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: end;
+}
+
+/*Setting Width*/
+.photo-1 img{
+    max-width: 414px;
+    width: 80%;
+}
+
+.photo-2 img{
+    max-width: 552px;
+    width: 100%;
+}
+
+.photo-3 img{
+    max-width: 414px;
+    width: 80%;
+}
+
+.photo-4 img{
+    max-width: 552px;
+    width: 100%;
+}
+
+
+.photo-info h3 {
+    color: white;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 16px;
+    font-weight: 600; 
+    margin-top: 10px;
+}
+
+.photo-info p {
+    color: white;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 16px;
+    font-weight: 300; 
+    margin-top: 5px;
+}
+
+.more-photo-info {
+    margin-top: 100px;
+}
+
+
+.more-photo-info p {
+    color: #00ffe5;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 16px;
+    font-weight: 600; 
+    margin-top: 10px;
+}
+
+.more-photo-info a {
+    color: white;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 16px;
+    font-weight: 400; 
+    margin-top: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.more-photo-info a i {
+    margin-right: 7px;
+}
+
+/*VIDEOGRAPHY*/
+.section-videography {
+    height: 1080px;
+}
+.padding-video {
+    margin-top: 80px;
+}
+
+.padding-video h3 {
+    color: white;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 18px;
+    font-weight: 600; 
+}
+
+.padding-video p {
+    color: #00ffe5;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 14px;
+    font-weight: 400; 
+    margin-top: 5px;
+}
+
+.padding-video iframe {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+/*SETTING RESUME DOANG*/
+@media (max-width: 1700px) { 
+    .section-resume {
+        height: auto;
+    }
+
+    .padding-resume {
+        padding-bottom: 10%;
+    }
+    
+    .layout-resume {
+        flex-direction: column;
+    }
+
+    .title-ido {
+        margin-top: 150px;
+    }
+    .title-ability {
+        margin-top: 80px;
+    }
+
+    .resume3 {
+        display: flex;
+    }
+
+    .layout-resume3-1700 {
+        margin-right: 235px;
+    }
+
+    .title-hobbies {
+        margin-top: 150px;
+    }
+}   
+
+@media (max-width: 1300px) {
+    .layout-resume-1700 {
+        flex-direction: column;
+        margin-right: 60px;
+    }
+
+    .layout-resume {
+        flex-direction:row;
+    }
+
+    .title-ido {
+        margin-top: 0px;
+    }
+
+    .title-organization {
+        margin-top: 80px;
+    }
+
+    .resume3 {
+        display: inline;
+    }
+
+    .title-hobbies {
+        margin-top: 80px;
+    }
+
+    .layout-resume3-1700 {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .menu-nav ul {
+        gap: 20rem;
+    }
+
+    .layout-resume {
+        flex-direction: column;
+    }
+
+    .title-ido {
+        margin-top: 80px;
+    }
+
+    .section-photography {
+        margin-left: 0;
+    }
+
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .photo-2 {
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 80px;
+    }
+    
+    .photo-3 {
+        grid-column: 1;
+        grid-row: 3;
+        margin-top: 50px;
+    }
+    
+    .photo-4 {
+        grid-column: 1;
+        grid-row: 4;
+        margin-top: 80px;
+    }
+
+    .photo-1 img{
+        width: 414px;
+    }
+    
+    .photo-2 img{
+        width: 414px;
+    }
+    
+    .photo-3 img{
+        width: 414px;
+    }
+    
+    .photo-4 img{
+        width: 414px;
+    }
+    
+
+
+
+}
+
+@media (max-width: 992px) {
+    .menu-nav ul {
+        gap: 10rem;
+    }
+
+
+
+}
+
+@media (max-width : 768px) {
+    div.section-home {
+        background: none;
+    }
+
+    .menu-nav {
+        justify-content:flex-start;
+        flex-wrap: wrap;
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    
+    .menu-nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .menu-nav ul li:last-of-type {
+        padding-bottom: 0rem; /*buat kasi padding list paling bawah*/
+    }
+
+    .menu-nav ul.hidden {
+        display: none;
+    }
+
+    .menu-icon {
+        color: white;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-icon:hover {
+        color:#00ffe5;
+    }
+
+    .nama {
+        margin-top: 100px;
+    }
+
+    .timeline::before {
+        left: 25px;
+    }
+    
+    .year {
+        width: 60px;
+    }
+
+    .year-dot {
+        left: 0px;
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .content {
+        padding-left: 1rem;
+    }
+
+    .porto-nav {
+        width: 500px;
+    }
+
+    .porto-nav ul {
+        gap: 50px;
+    }
+
+    .card-gd1,
+    .card-gd2 {
+        gap: 20px;
+    }
+
+    .card-porto a h3 {
+        font-size: 14px;
+    }
+
+    .card-porto::after{
+        height: 80%;
+    }
+
+
+}
+
+@media (max-width: 640px) {
+    div.section-home {
+        height: 1136;
+        background: none;
+    }
+
+    .section-resume {
+        height: auto;
+    }
+
+    .padding-resume {
+        padding-bottom: 10%;
+    }
+    .resume1,
+    .resume2 {
+        margin-right: 0px;
+    }
+
+    .layout-resume-1700 {
+        margin-right: 0;
+        padding-right: 5%;
+    }
+
+        /*rank margin*/
+        .rank-figma,
+        .rank-illustrator,
+        .rank-photoshop,
+        .rank-corel,
+        .rank-premiere {
+            margin-left: 0px;
+        }
+    
+        .figma p {
+            margin-right: 100px;
+        }
+    
+        .illustrator p {
+            margin-right: 65px;
+        }
+    
+        .photoshop p {
+            margin-right: 59px;
+        }
+    
+        .corel p {
+            margin-right: 55px;
+        }
+    
+        .premiere p {
+            margin-right: 37px;
+        }
+    
+        .rank-indo,
+        .rank-english {
+            margin-left: 0px;
+        }
+    
+        .indo p {
+            margin-right: 44px;
+        }
+    
+        .english p {
+            margin-right: 150px;
+        }
+
+        .porto-nav {
+            width: 550px;
+        }
+
+        .porto-nav ul {
+            gap: 65px;
+        }
+
+        .card-porto img {
+            width: 70%;
+        }
+
+
+        .card-gd1,
+        .card-gd2 {
+            gap: 5px;
+            margin-left: -80px;
+        }
+
+        .card-porto a p {
+            font-size: 16px;
+        }
+
+        .card-porto a h3 {
+            font-size: 16px;
+        }
+
+        .card-porto::after{
+            display: none;
+        }
+}
+
+/*ANDROID*/
+@media (max-width : 480px) {
+    
+    div.section-home {
+        height: auto;
+        background: none;
+    }
+    
+    .text-home {
+        padding-bottom: 10%;
+    }
+
+    .menu-nav ul li a {
+        font-size: 35px;
+    }
+
+    .nama {
+        margin-top: 120px;
+        font-size: 35px;
+    }
+
+    .nama:after {
+        height: 2px;
+        width: 230px;
+        bottom: 1px;
+    }
+
+    .deskripsi {
+        margin-top: 90px;
+        font-size: 14px;
+    }
+
+    .button-home {
+        margin-top: 120px;
+        gap: 30px;
+    }
+
+    .button-resume, .button-porto {
+        width: 100px;
+        font-size: 20px;
+    }
+
+    .sosmed-home {
+        margin-top: 140px;
+        flex-direction: column;
+        font-size: 12px;
+        align-items:baseline;
+    }
+
+    .section-resume {
+        height: auto;
+    }
+
+    .ph-instagram-logo,
+    .ph-envelope,
+    .ph-linkedin-logo {
+        font-size: 24px;
+    }
+
+    .padding-resume {
+        padding-bottom: 10%;
+    }
+
+    .resume1,
+    .resume2 {
+        margin-right: 0px;
+    }
+
+    .layout-resume-1700 {
+        margin-right: 0;
+        padding-right: 5%;
+    }
+
+    .title-software,
+    .title-languages,
+    .title-personal,
+    .title-organization,
+    .title-education,
+    .title-ido,
+    .title-ability,
+    .title-hobbies {
+        font-size: 20px;
+    }
+
+    .title-software:after {
+        width: 198px;
+    }
+
+    .figma img,
+    .illustrator img,
+    .photoshop img,
+    .corel img,
+    .premiere img {
+        width:  30px;
+    } 
+    .figma p,
+    .illustrator p,
+    .photoshop p,
+    .corel p,
+    .premiere p {
+        font-size: 14px;
+    }
+
+    /*rank margin*/
+    .rank-figma,
+    .rank-illustrator,
+    .rank-photoshop,
+    .rank-corel,
+    .rank-premiere {
+        margin-left: 0px;
+    }
+
+    .figma p {
+        margin-right: 70px;
+    }
+
+    .illustrator p {
+        margin-right: 45px;
+    }
+
+    .photoshop p {
+        margin-right: 41px;
+    }
+
+    .corel p {
+        margin-right: 38px;
+    }
+
+    .premiere p {
+        margin-right: 26px;
+    }
+
+    .title-languages:after {
+        width: 130px;
+
+    }
+
+    .indo p,
+    .english p {
+        font-size: 14px;
+    }
+
+    .rank-indo,
+    .rank-english {
+        margin-left: 0px;
+    }
+
+    .indo p {
+        margin-right: 35px;
+    }
+
+    .english p {
+        margin-right: 109px;
+    }
+
+
+    .title-personal::after {
+        width: 220px;
+    }
+
+    .list-personal1,
+    .list-personal2 {
+        font-size: 13px;
+    }
+
+    .title-organization:after {
+        width: 313px;
+    } 
+
+        /* Garis vertikal */
+    .timeline::before {
+        content: '';
+        position: absolute;
+        left: 22px;
+        top: 0;
+        bottom: 30px;
+        width: 3px;
+        background: #00ffe5;
+    }
+
+    .timeline-item {
+        display: flex;
+        margin-bottom: 65px; /*atur jarak tahun*/
+        position: relative;
+    }
+
+    .year {
+        width: 55px;
+        position: relative;
+    }
+    
+    .year-dot {
+        width: 45px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .content h3 {
+        font-size: 16px;
+    }
+
+    .content p {
+        font-size: 12px;
+    }       
+
+    .title-education:after {
+        width: 131px;
+    }
+
+    .edu-year {
+        font-size: 14px;
+
+    }
+
+    .edu {
+        font-size: 14px;
+    }
+
+    .title-ido:after {
+        width: 180px;
+    }
+
+    .list-ido {
+        margin-top: 25px;
+        font-size: 14px;
+    }
+
+    .title-ability:after {
+        width: 185px;
+
+    }
+
+    .list-ability {
+        margin-top: 25px;
+        font-size: 14px;
+    }
+
+
+    .title-hobbies:after {
+        width: 245px;
+    }
+
+    .list-hobbies {
+        margin-top: 25px;
+        font-size: 14px;
+    }
+
+    .ph-camera,
+    .ph-music-notes-simple,
+    .ph-person-simple-hike,
+    .ph-volleyball {
+        font-size: 35px;
+
+    }
+
+
+}
