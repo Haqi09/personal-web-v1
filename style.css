@@ -1405,6 +1405,11 @@ div.section-home {
         height: auto;
         background: none;
     }
+
+    .text-home {
+        padding-left: 5%;
+    
+    }
     
     .text-home {
         padding-bottom: 10%;
@@ -1717,7 +1722,7 @@ div.section-home {
     }
 
     .padding-video iframe {
-        width: 400px;
+        width: 380px;
     }
 
     .padding-video h3 {
