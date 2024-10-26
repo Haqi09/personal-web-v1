@@ -1299,6 +1299,10 @@ div.section-home {
         background: none;
     }
 
+    .deskripsi-lagi{
+        width: 490px;
+    }
+
     .section-resume {
         height: auto;
     }
