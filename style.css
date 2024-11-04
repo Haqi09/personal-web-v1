@@ -296,9 +296,7 @@ div.section-home {
 .rank-illustrator,
 .rank-photoshop,
 .rank-corel,
-.rank-premiere,
-.rank-indo,
-.rank-english {
+.rank-premiere {
     margin-top: 3px;
     width: 100%;
     max-width: 200px;
@@ -428,54 +426,28 @@ div.section-home {
     border-radius:10px 10px 10px 10px;
 }
 
-.indo {
-    display: flex;
-    margin-top: 30px;
-    align-items: center;
-}
-.english {
-    display: flex;
-    margin-top: 20px;
-    align-items: center;
-}
-
-.indo p,
-.english p {
-    color: white;
+.indo-title,
+.english-title {
+    color: #00ffe5;
     font-family: 'Lexend Deca',sans-serif;
     font-size: 20px;
-    font-weight: 400;
-    position: relative;
+    font-weight: 500;
 }
 
-/*indo*/
-.filled-indo {
-    display: flex;
-    gap: 4px;
-    width: 100%; 
-    position: relative;
+.indo-title {
+    margin-right: 20px;
 }
 
-/*english*/
-.filled-english {
-    display: flex;
-    gap: 4px;
-    width: 70%; 
-    position: relative;
+.english-title {
+    margin-right: 127px;
 }
 
-.empty-english {
-    display: flex;
-    gap: 4px;
-    width: 30%; 
-}
-
-.rank-indo {
-    margin-left: 20px;
-}
-
+.rank-indo,
 .rank-english {
-    margin-left: 129px;
+    color: white;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 
@@ -1552,9 +1524,8 @@ div.section-home {
         font-size: 14px;
     }
 
-    .rank-indo,
-    .rank-english {
-        margin-left: 0px;
+    .english-title {
+        margin-right: 97px;
     }
 
     .indo p {
