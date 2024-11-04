@@ -426,6 +426,15 @@ div.section-home {
     border-radius:10px 10px 10px 10px;
 }
 
+.indo {
+    display: flex;
+    margin-top: 30px;
+}
+.english {
+    display: flex;
+    margin-top: 20px;
+}
+
 .indo-title,
 .english-title {
     color: #00ffe5;
