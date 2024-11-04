@@ -429,10 +429,12 @@ div.section-home {
 .indo {
     display: flex;
     margin-top: 30px;
+    align-items: center;
 }
 .english {
     display: flex;
     margin-top: 20px;
+    align-items: center;
 }
 
 .indo-title,
